@@ -1,0 +1,656 @@
+.foot {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+
+	.contentbox {
+		width: 15rem;
+		height: 6rem;
+		background-color: #fcc800;
+		margin: 0 auto;
+		@media screen and (max-width: 1024px) {
+			width: 17rem;
+			height: 7rem;
+		}
+		@media screen and (max-width: 768px) {
+			width: 18rem;
+			height: 8rem;
+		}
+		@media screen and (max-width: 767px) {
+			width: 94%;
+			height: 900px;
+		}
+
+		.sub-conts {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			display: -moz-box;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			-webkit-box-pack: center;
+			-moz-box-pack: center;
+			justify-content: center;
+			-webkit-justify-content: center;
+			align-items: center;
+			-webkit-align-items: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-moz-box-align: center;
+
+			.sub-conText {
+				width: 12rem;
+				height: 4rem;
+				box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				transition: all 0.8s ease 0s;
+				-webkit-transition: all 0.8s ease 0s;
+				-moz-transition: all 0.8s ease 0s;
+				@media screen and (max-width: 1024px) {
+					width: 15rem;
+					height: 4.6rem;
+				}
+				@media screen and (max-width: 768px) {
+					width: 17rem;
+					height: 5.3rem;
+				}
+				@media screen and (max-width: 768px) {
+					width: 96%;
+					height: 800px;
+					margin: 0 auto;
+				}
+
+				h2 {
+					font-size: 0.58rem;
+					font-weight: bold;
+					color: #000;
+					text-align: left;
+					@media screen and (max-width: 768px) {
+						font-size: 0.8rem;
+					}
+					@media screen and (max-width: 767px) {
+						font-size: 26px;
+						text-align: center;
+					}
+				}
+
+				h3 {
+					padding-top: 0.3rem;
+					font-weight: normal;
+					color: #000;
+					font-size: 0.24rem;
+					@media screen and (max-width: 1024px) {
+						font-size: 0.3rem;
+					}
+					@media screen and (max-width: 768px) {
+						font-size: 0.4rem;
+						line-height: 150%;
+					}
+					@media screen and (max-width: 767px) {
+						font-size: 16px;
+						text-align: center;
+						margin-top: 40px;
+					}
+				}
+
+				.tel {
+					width: 100%;
+					padding-top: 0.3rem;
+					font-size: 0;
+
+					aside {
+						// width: 50%;
+						display: inline-block;
+						vertical-align: middle;
+						@media screen and (max-width: 767px) {
+							display: block;
+						}
+
+						p {
+							width: auto;
+							height: 0.3rem;
+							font-family: MicrosoftYaHei;
+							font-size: 0.14rem;
+							font-weight: normal;
+							font-style: normal;
+							font-stretch: normal;
+							line-height: 0.18rem;
+							letter-spacing: 0.007rem;
+							color: #040000;
+							@media screen and (max-width: 1024px) {
+								font-size: 0.2rem;
+								height: 0.2rem;
+								line-height: 0.2rem;
+							}
+							@media screen and (max-width: 767px) {
+								font-size: 16px;
+								line-height: 26px;
+								text-align: center;
+								height: auto;
+							}
+						}
+
+						// .nubgs {
+						// 	position: relative;
+						// 	width: 5.2rem;
+						// 	height: 0.26rem;
+						// 	border-right: 1px solid #000;
+						// 	margin-top: 0.2rem;
+						// 	@media screen and (max-width: 1024px) {
+						// 		width: 5.5rem;
+						// 		height: 0.3rem;
+						// 	}
+						// 	@media screen and (max-width: 767px) {
+						// 		width: 100%;
+						// 	}
+						// }
+						.sp2 {
+							width: 2.3rem;
+							font-size: 0.28rem;
+							display: inline-block;
+							overflow: hidden;
+							float: left;
+							height: 0.26rem;
+							font-family: MicrosoftYaHei;
+							font-weight: normal;
+							font-style: normal;
+							font-stretch: normal;
+							line-height: 0.26rem;
+							letter-spacing: 0.014rem;
+							color: #040000;
+							@media screen and (max-width: 1024px) {
+								width: 2.5rem;
+								font-size: 0.28rem;
+							}
+							@media screen and (max-width: 767px) {
+								width: 100%;
+								text-align: center;
+								float: none;
+								height: 26px;
+								line-height: 26px;
+								font-size: 16px;
+							}
+						}
+					}
+
+					.tell-way {
+						display: inline-block;
+						vertical-align: bottom;
+						margin-left: 0.9rem;
+						@media screen and (max-width: 767px) {
+							width: 90%;
+							display: block;
+							display: flex;
+							display: -moz-box;
+							display: -webkit-box;
+							display: -ms-flexbox;
+							display: -webkit-flex;
+							-webkit-box-pack: center;
+							-moz-box-pack: center;
+							justify-content: center;
+							-webkit-justify-content: center;
+							align-items: center;
+							-webkit-align-items: center;
+							-webkit-box-align: center;
+							-ms-flex-align: center;
+							-moz-box-align: center;
+						}
+
+						.QQuser {
+							display: inline-block;
+							vertical-align: bottom;
+							font-size: 0;
+							cursor: pointer;
+							position: relative;
+							@media screen and (max-width: 767px) {
+								margin: 50px 0 20px;
+								display: inline-block;
+							}
+
+							&:hover {
+								em {
+									width: 0.3rem;
+									height: 0.3rem;
+									display: block;
+									position: absolute;
+									left: 0;
+									top: 0;
+									opacity: 0;
+									@extend .qqwxhover;
+									@media screen and (max-width: 767px) {
+										width: 2.5rem;
+										height: 2.5rem;
+									}
+
+									img {
+										width: 0.3rem;
+										height: 0.3rem;
+										display: block;
+										@media screen and (max-width: 767px) {
+											width: 2.5rem;
+											height: 2.5rem;
+										}
+									}
+								}
+
+								i {
+									width: 0.3rem;
+									height: 0.3rem;
+									display: block;
+									position: absolute;
+									left: 0;
+									top: 0;
+									opacity: 1;
+									@extend .qqwxhover;
+									@media screen and (max-width: 767px) {
+										width: 2.5rem;
+										height: 2.5rem;
+									}
+
+									img {
+										width: 0.3rem;
+										height: 0.3rem;
+										display: block;
+										@media screen and (max-width: 767px) {
+											width: 2.5rem;
+											height: 2.5rem;
+										}
+									}
+								}
+
+								span {
+									transform: scale(1);
+									-webkit-transform: scale(1);
+									-moz-transform: scale(1);
+									transform: translateX(-.80rem);
+									-webkit-transform: translateX(-.80rem);
+									-moz-transform: translateX(-.80rem);
+									@extend .qqwxhover;
+									opacity: 1;
+									@media screen and (max-width: 767px) {
+										transform: translateX(-2.5rem);
+										-webkit-transform: translateX(-2.5rem);
+										-moz-transform: translateX(-2.5rem);
+									}
+								}
+							}
+							//qq hover...
+							font {
+								display: inline-block;
+								vertical-align: bottom;
+								width: 0.3rem;
+								height: 0.3rem;
+								position: relative;
+								@media screen and (max-width: 767px) {
+									width: 2.5rem;
+									height: 2.5rem;
+								}
+
+								em {
+									width: 0.3rem;
+									height: 0.3rem;
+									display: block;
+									position: absolute;
+									left: 0;
+									top: 0;
+									@extend .qqwxhover;
+									@media screen and (max-width: 767px) {
+										width: 2.5rem;
+										height: 2.5rem;
+									}
+
+									img {
+										width: 0.3rem;
+										height: 0.3rem;
+										display: block;
+										@media screen and (max-width: 767px) {
+											width: 2.5rem;
+											height: 2.5rem;
+										}
+									}
+								}
+
+								i {
+									width: 0.3rem;
+									height: 0.3rem;
+									display: block;
+									position: absolute;
+									left: 0;
+									top: 0;
+									opacity: 0;
+									@extend .qqwxhover;
+									@media screen and (max-width: 767px) {
+										width: 2.5rem;
+										height: 2.5rem;
+									}
+
+									img {
+										width: 0.3rem;
+										height: 0.3rem;
+										display: block;
+										@media screen and (max-width: 767px) {
+											width: 2.5rem;
+											height: 2.5rem;
+										}
+									}
+								}
+							}
+
+							span {
+								width: 0.8rem;
+								height: 0.24rem;
+								line-height: 0.24rem;
+								display: inline-block;
+								position: absolute;
+								left: 0;
+								top: 0;
+								opacity: 0;
+								background: #000000;
+								color: #fcc800;
+								font-size: 0.13rem;
+								text-align: center;
+								border-radius: 0.15rem;
+								transform: scale(0.1);
+								-webkit-transform: scale(0.1);
+								-moz-transform: scale(0.1);
+								@extend .qqwxhover;
+								@media screen and (max-width: 767px) {
+									width: 2.8rem;
+									height: 1.4rem;
+									line-height: 1.4rem;
+									border-radius: 0.8rem;
+									font-size: 0.6rem;
+								}
+							}
+						}
+						// qq...
+						.WXuser {
+							display: inline-block;
+							vertical-align: bottom;
+							margin-left: 0.2rem;
+							font-size: 0;
+							position: relative;
+							@media screen and (max-width: 768px) {
+								margin-left: 1rem;
+							}
+							@media screen and (max-width: 767px) {
+								margin: 50px 0 20px 30px;
+								display: inline-block;
+							}
+
+							&:hover {
+								em {
+									width: 0.3rem;
+									height: 0.3rem;
+									display: block;
+									position: absolute;
+									left: 0;
+									top: 0;
+									opacity: 0;
+									@media screen and (max-width: 767px) {
+										width: 2.5rem;
+										height: 2.5rem;
+									}
+
+									img {
+										width: 0.3rem;
+										height: 0.3rem;
+										display: block;
+										@media screen and (max-width: 767px) {
+											width: 2.5rem;
+											height: 2.5rem;
+										}
+									}
+								}
+
+								i {
+									width: 0.3rem;
+									height: 0.3rem;
+									display: block;
+									position: absolute;
+									left: 0;
+									top: 0;
+									opacity: 1;
+									@media screen and (max-width: 767px) {
+										width: 2.5rem;
+										height: 2.5rem;
+									}
+
+									img {
+										width: 0.3rem;
+										height: 0.3rem;
+										display: block;
+										@media screen and (max-width: 767px) {
+											width: 2.5rem;
+											height: 2.5rem;
+										}
+									}
+								}
+
+								span {
+									transform: scale(1);
+									-webkit-transform: scale(1);
+									-moz-transform: scale(1);
+									transform: translateX(.1rem);
+									-webkit-transform: translateX(.1rem);
+									-moz-transform: translateX(.1rem);
+									@extend .qqwxhover;
+									opacity: 1;
+									@media screen and (max-width: 767px) {
+										transform: translateX(2.5rem);
+										-webkit-transform: translateX(2.5rem);
+										-moz-transform: translateX(2.5rem);
+									}
+								}
+							}
+							// wx hover...
+							font {
+								display: inline-block;
+								vertical-align: bottom;
+								width: 0.3rem;
+								height: 0.3rem;
+								position: relative;
+								@media screen and (max-width: 767px) {
+									width: 2.5rem;
+									height: 2.5rem;
+								}
+
+								em {
+									width: 0.3rem;
+									height: 0.3rem;
+									display: block;
+									position: absolute;
+									left: 0;
+									top: 0;
+									@extend .qqwxhover;
+									@media screen and (max-width: 767px) {
+										width: 2.5rem;
+										height: 2.5rem;
+									}
+
+									img {
+										width: 0.3rem;
+										height: 0.3rem;
+										display: block;
+										@media screen and (max-width: 767px) {
+											width: 2.5rem;
+											height: 2.5rem;
+										}
+									}
+								}
+
+								i {
+									width: 0.3rem;
+									height: 0.3rem;
+									display: block;
+									position: absolute;
+									left: 0;
+									top: 0;
+									opacity: 0;
+									@extend .qqwxhover;
+									@media screen and (max-width: 767px) {
+										width: 2.5rem;
+										height: 2.5rem;
+									}
+
+									img {
+										width: 0.3rem;
+										height: 0.3rem;
+										display: block;
+										@media screen and (max-width: 767px) {
+											width: 2.5rem;
+											height: 2.5rem;
+										}
+									}
+								}
+							}
+
+							span {
+								width: 0.6rem;
+								height: 0.6rem;
+								display: inline-block;
+								position: absolute;
+								left: 0.3rem;
+								top: -.15rem;
+								opacity: 0;
+								overflow: hidden;
+								transform: scale(.1);
+								-webkit-transform: scale(.1);
+								-moz-transform: scale(.1);
+								@extend .qqwxhover;
+								@media screen and (max-width: 767px) {
+									width: 2.5rem;
+									height: 2.5rem;
+								}
+
+								img {
+									width: 0.6rem;
+									height: 0.6rem;
+									display: block;
+									@media screen and (max-width: 767px) {
+										width: 2.5rem;
+										height: 2.5rem;
+									}
+								}
+							}
+						}
+						// wx...
+					}
+					//tell-way..
+				}
+			}
+
+			.address {
+				margin-top: 2%;
+
+				ul {
+					li {
+						width: 3.2rem;
+						height: 1.5rem;
+						float: left;
+						@media screen and (max-width: 1024px) {
+							width: 4.5rem;
+							height: 1.5rem;
+							float: left;
+						}
+						@media screen and (max-width: 767px) {
+							width: 96%;
+							height: 150px;
+							float: none;
+							margin: 0 auto;
+							text-align: center;
+						}
+
+						& + li {
+							margin-left: 1.1rem;
+							@media screen and (max-width: 1024px) {
+								margin-left: 0.7rem;
+							}
+							@media screen and (max-width: 768px) {
+								margin-left: 1.7rem;
+							}
+							@media screen and (max-width: 767px) {
+								margin: 3% 0 0;
+							}
+						}
+
+						h1 {
+							font-size: 0.18rem;
+							font-weight: normal;
+							font-style: normal;
+							font-stretch: normal;
+							line-height: 0.36rem;
+							letter-spacing: 0;
+							color: #000000;
+							@media screen and (max-width: 1024px) {
+								font-size: 0.3rem;
+								line-height: 0.4rem;
+							}
+							@media screen and (max-width: 767px) {
+								font-size: 1rem;
+								line-height: 1rem;
+							}
+						}
+
+						span {
+							font-size: 0.14rem;
+							font-weight: normal;
+							font-style: normal;
+							font-stretch: normal;
+							line-height: 0.24rem;
+							letter-spacing: 0;
+							color: #000000;
+							@media screen and (max-width: 1024px) {
+								font-size: 0.2rem;
+								line-height: 0.4rem;
+							}
+							@media screen and (max-width: 767px) {
+								font-size: 0.8rem;
+								line-height: 1.3rem;
+							}
+						}
+
+						p {
+							font-size: 0.14rem;
+							font-weight: normal;
+							font-style: normal;
+							font-stretch: normal;
+							line-height: 0.24rem;
+							letter-spacing: 0;
+							color: #000000;
+							@media screen and (max-width: 1024px) {
+								font-size: 0.2rem;
+								line-height: 0.4rem;
+							}
+							@media screen and (max-width: 767px) {
+								font-size: 0.8rem;
+								line-height: 1.3rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.qqwxhover {
+	transition: all 0.6s ease-in-out 0s;
+	-webkit-transition: all 0.6s ease-in-out 0s;
+	-moz-transition: all 0.6s ease-in-out 0s;
+}
+
+.sublive {
+	opacity: 1;
+	transform: translateX(0px);
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+}
+
+.subdie {
+	opacity: 0;
+	transform: translateX(200px);
+	-webkit-transform: translateX(200px);
+	-moz-transform: translateX(200px);
+}

@@ -1,0 +1,242 @@
+.section {
+	width: px2rem(1600);
+	margin: 0 auto;
+	@media screen and (max-width:767px) {
+		width: px2rem(1800);
+		margin: 0 auto 10%;
+	}
+
+	ul {
+		li {
+			width: px2rem(1600);
+			height: px2rem(350);
+			margin-bottom: px2rem(60);
+			// border: solid 1px rgba(127, 127, 127, 1);
+			@extend .flexCC;
+			@media screen and (max-width:767px) {
+				width: px2rem(1800);
+				height: px2rem(2000);
+				display: block;
+			}
+
+			div {
+				&:nth-child(1) {
+					width: px2rem(550);
+					height: px2rem(300);
+					margin: px2rem(25);
+					@extend .backgroundCC;
+					@extend .translateX0200;
+					@extend .delay1000;
+
+					&.left-to {
+						@extend .translateX0;
+						@extend .delay1000;
+					}
+					@media screen and (max-width:767px) {
+						width: px2rem(1600);
+						height: px2rem(800);
+						margin: px2rem(100);
+					}
+				}
+
+				&:nth-child(2) {
+					width: px2rem(950);
+					height: px2rem(300);
+					padding: px2rem(25);
+					display: flex;
+					@extend .flexV;
+					@extend .translateX200;
+					@extend .delay1000;
+					position: relative;
+
+					&::after {
+						content: 'By：叶晟荣品牌设计';
+						// width: 150px;
+						height: 0.4rem;
+						line-height: 0.4rem;
+						display: block;
+						// background-color: #fcc800;
+						position: absolute;
+						left: px2rem(25);
+						bottom: px2rem(25);
+						color: #C3C3C3;
+						font-size: px2rem(16);
+					}
+
+					&.right-to {
+						@extend .translateX0;
+						@extend .delay1000;
+					}
+					@media screen and (max-width:767px) {
+						width: px2rem(1600);
+						height: px2rem(800);
+						margin: px2rem(100);
+					}
+
+					h1 {
+						font-size: px2rem(24);
+						line-height: px2rem(36);
+						margin-top: px2rem(20);
+						letter-spacing: 0;
+						font-weight: normal;
+						font-style: normal;
+						font-stretch: normal;
+						color: #fefefe;
+						@media screen and (max-width: 1023px) {
+							font-size: px2rem(40);
+							line-height: px2rem(40);
+							height: px2rem(60);
+							overflow: hidden;
+							white-space: nowrap;
+							text-overflow: ellipsis;
+						}
+						@media screen and (max-width:767px) {
+							font-size: px2rem(100);
+							line-height: px2rem(90);
+							height: px2rem(100);
+						}
+					}
+
+					p {
+						max-height: px2rem(120);
+						line-height: px2rem(30);
+						font-size: px2rem(16);
+						margin-top: px2rem(30);
+						letter-spacing: 0;
+						font-weight: normal;
+						color: #fefefe;
+						position: relative;
+						overflow: hidden;
+						text-indent: 2em;
+						@media screen and (max-width: 1024px) {
+							font-size: 0.2rem;
+						}
+						@media screen and (max-width: 1023px) {
+							max-height: px2rem(150);
+							line-height: px2rem(50);
+							font-size: px2rem(30);
+						}
+						@media screen and (max-width:767px) {
+							max-height: px2rem(360);
+							line-height: px2rem(120);
+							font-size: px2rem(70);
+							margin-top: px2rem(100);
+						}
+
+						&::after {
+							position: absolute;
+							bottom: 0;
+							content: '...';
+							width: 100%;
+							height: px2rem(30);
+							background: #000;
+							text-indent: 1em;
+							@media screen and (max-width:767px) {
+								height: px2rem(120);
+							}
+						}
+					}
+
+					a {
+						width: 1.39rem;
+						height: 0.4rem;
+						line-height: 0.4rem;
+						font-size: 0.2rem;
+						text-align: center;
+						margin: auto 0 0 auto;
+						background-color: #000;
+						border: 1px solid #FCC800;
+						color: #FCC800;
+						display: inline-block;
+						cursor: pointer;
+						transition: all 0.8s ease-out 0s;
+						-webkit-transition: all 0.8s ease-out 0s;
+						-moz-transition: all 0.8s ease-out 0s;
+						@media screen and (max-width: 1023px) {
+							width: px2rem(180);
+							height: px2rem(60);
+							line-height: px2rem(60);
+							font-size: px2rem(30);
+						}
+						@media screen and (max-width:767px) {
+							width: px2rem(400);
+							height: px2rem(100);
+							line-height: px2rem(105);
+							font-size: px2rem(70);
+						}
+
+						&:hover {
+							background-color: #FCC800;
+							color: #000;
+							transition: all 0.8s ease-out 0s;
+							-webkit-transition: all 0.8s ease-out 0s;
+							-moz-transition: all 0.8s ease-out 0s;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+//main scss...
+
+.point-page-code {
+	width: 100%;
+	background-color: #000;
+	margin: 2% auto 6%;
+
+	div {
+		@extend .flexCC;
+		height: 40px;
+
+		span {
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			color: #000;
+			text-align: center;
+			display: inline-block;
+			font-size: 14px;
+			background-color: #b1b1b1;
+			cursor: pointer;
+
+			&:hover {
+				color: #000;
+				background-color: #fcc800;
+			}
+		}
+
+		p {
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			color: #000;
+			text-align: center;
+			display: inline-block;
+			font-size: 14px;
+			margin: 0 10px;
+			background-color: #b1b1b1;
+			cursor: pointer;
+
+			&:nth-child(1) {
+				background-color: #fcc800;
+			}
+
+			&:hover {
+				color: #000;
+				background-color: #fcc800;
+			}
+		}
+
+		em {
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			color: #000;
+			font-size: 14px;
+			text-align: center;
+			display: inline-block;
+			background-color: #b1b1b1;
+		}
+	}
+}

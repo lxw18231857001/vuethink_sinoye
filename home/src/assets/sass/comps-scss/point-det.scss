@@ -1,0 +1,105 @@
+#pointDet {
+	background-color: #171717;
+}
+
+.point-det1 {
+	width: px2rem(1200);
+	margin: 8% auto 10%;
+	@media screen and (max-width: 767px) {
+		width: px2rem(1800);
+		margin: 8% auto 10%;
+	}
+
+	header {
+		width: 100%;
+		height: px2rem(120);
+		margin-bottom: 8%;
+		color: #fff;
+		text-align: center;
+		@media screen and (max-width: 767px) {
+			height: px2rem(500);
+		}
+
+		h1 {
+			font-size: px2rem(30);
+			line-height: px2rem(36);
+			letter-spacing: 1.5px;
+			margin-bottom: px2rem(30);
+			text-align: center;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			color: #ffffff;
+			@media screen and (max-width: 1023px) {
+				font-size: px2rem(50);
+				line-height: px2rem(50);
+			}
+			@media screen and (max-width: 767px) {
+				font-size: px2rem(100);
+				line-height: px2rem(130);
+				margin-bottom: px2rem(130);
+			}
+		}
+
+		div {
+			display: block;
+			height: px2rem(50);
+			font-size: px2rem(16);
+			line-height: px2rem(50);
+			font-weight: normal;
+			letter-spacing: 0.8px;
+			color: #ffffff;
+			@media screen and (max-width: 1023px) {
+				height: px2rem(50);
+				font-size: px2rem(24);
+				line-height: px2rem(50);
+			}
+			@media screen and (max-width: 767px) {
+				height: px2rem(90);
+				font-size: px2rem(60);
+				line-height: px2rem(90);
+			}
+
+			time {
+				margin-left: 0.5rem;
+			}
+		}
+	}
+
+	article {
+		img {
+			width: px2rem(1000);
+			height: px2rem(550);
+			margin: px2rem(80) auto;
+			display: block;
+			@media screen and (max-width: 767px) {
+				width: px2rem(1400);
+				height: px2rem(800);
+				margin: px2rem(200) auto;
+			}
+		}
+
+		p {
+			width: px2rem(1200);
+			height: auto;
+			line-height: 150%;
+			font-size: px2rem(22);
+			margin: px2rem(40) auto;
+			text-align: center;
+			font-weight: normal;
+			letter-spacing: 1.2px;
+			color: #ffffff;
+			@media screen and (max-width: 1023px) {
+				line-height: 160%;
+				font-size: px2rem(34);
+			}
+			@media screen and (max-width: 767px) {
+				width: px2rem(1800);
+				height: auto;
+				line-height: 160%;
+				font-size: px2rem(80);
+				margin: px2rem(100) auto;
+			}
+		}
+	}
+}

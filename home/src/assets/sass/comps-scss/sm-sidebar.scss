@@ -1,0 +1,118 @@
+.sm-sidebar {
+	width: 0.6rem;
+	height: 0.6rem;
+	padding-top: 1px;
+	overflow: hidden;
+	background-color: rgba(242, 193, 27, 1);
+	@extend .hover-delay;
+	position: fixed;
+	top: 50%;
+	left: 0;
+	@media screen and(max-width: 1023px) {
+		display: none;
+	}
+
+	&:hover {
+		@extend .sidebar-hover;
+	}
+
+	aside {
+		width: 0.6rem;
+		height: 0.6rem;
+		float: right;
+		@extend .hover-delay;
+
+		div {
+			&:nth-child(1) {
+				// width: px2rem(100);
+				// height: px2rem(40);
+				// margin: px2rem(30) auto auto;
+				// background-image: url("../assets/imgs/mlogo.jpg");
+				// @extend .backgroundCC;
+				// @extend .hover-delay;
+				width: px2rem(20);
+				height: px2rem(4);
+				margin: px2rem(25) px2rem(20) px2rem(0) auto;
+				border-top: 1px solid #000;
+				@extend .hover-delay;
+			}
+
+			&:nth-child(2) {
+				width: px2rem(20);
+				height: px2rem(4);
+				margin: px2rem(0) px2rem(20) px2rem(20) auto;
+				border-top: 1px solid #000;
+				border-bottom: 1px solid #000;
+				overflow: hidden;
+				// @extend .hover-delay;
+				span {
+					display: block;
+					width: px2rem(90);
+					height: px2rem(30);
+					font-size: px2rem(18);
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: px2rem(30);
+					letter-spacing: 0;
+					color: #000;
+					cursor: pointer;
+					@extend .hover-delay;
+					text-align: right;
+
+					&:hover {
+						color: #fff;
+						@extend .hover-delay;
+					}
+				}
+			}
+		}
+	}
+}
+// 引用
+
+.sidebar-hover {
+	width: 1.8rem;
+	height: 1.5rem;
+	padding-top: 1px;
+	background-color: rgba(242, 193, 27, 1);
+	@extend .hover-delay;
+
+	aside {
+		width: px2rem(100);
+		height: auto;
+		overflow: hidden;
+		float: right;
+		@extend .hover-delay;
+
+		div {
+			&:nth-child(1) {
+				width: px2rem(20);
+				height: px2rem(4);
+				margin: px2rem(30) px2rem(10) px2rem(0) auto;
+				// margin: px2rem(30) auto auto;
+				// background-image: url("../assets/imgs/mlogo.jpg");
+				// @extend .backgroundCC;
+				// display: none;
+				border-top: none;
+				@extend .hover-delay;
+			}
+
+			&:nth-child(2) {
+				width: px2rem(90);
+				height: px2rem(90);
+				margin: px2rem(0) px2rem(10) px2rem(30) auto;
+				border-top: 1px solid #000;
+				border-bottom: none;
+				overflow: hidden;
+				@extend .hover-delay;
+			}
+		}
+	}
+}
+
+.hover-delay {
+	transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+}

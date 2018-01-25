@@ -1,0 +1,386 @@
+.call-adds {
+	width: 92%;
+	height: auto;
+	overflow: hidden;
+	margin: 10% auto;
+
+	.call-address {
+		width: px2rem(513);
+		height: px2rem(356);
+		overflow: hidden;
+		margin: px2rem(25) px2rem(30);
+		float: left;
+		@media screen and (max-width: 767px) {
+			width: px2rem(1800);
+			height: px2rem(1800);
+			margin: px2rem(100) auto;
+			float: none;
+		}
+
+		article {
+			width: px2rem(513);
+			height: px2rem(356);
+			position: relative;
+			@media screen and (max-width: 767px) {
+				width: px2rem(1800);
+				height: px2rem(1800);
+			}
+
+			img {
+				width: px2rem(513);
+				height: px2rem(356);
+				@extend .delay1000;
+				@include transform-scale(0);
+				opacity: 0;
+
+				&.scale-to {
+					opacity: 1;
+					@extend .delay1000;
+					@include transform-scale(1);
+				}
+				@media screen and (max-width: 767px) {
+					width: px2rem(1800);
+					height: px2rem(1800);
+				}
+			}
+
+			aside {
+				width: 90%;
+				height: 90%;
+				padding: 5%;
+				overflow: hidden;
+				background: rgba(242,193,28,0);
+				position: absolute;
+				top: 0;
+				left: 0;
+				cursor: url("../assets/imgs/map1.png"),url("../assets/imgs/map1.gif"),pointer;
+				@extend .flexCC;
+				@extend .flexV;
+				@extend .call-adds-delay;
+
+				&:hover {
+					background: rgba(242,193,28,.8);
+					@extend .call-adds-delay;
+
+					h1,
+					h2,
+					h3,
+					h4,
+					h5,
+					h6 {
+						opacity: 1;
+						@extend .call-adds-hover-transY;
+						@extend .call-adds-delay;
+					}
+				}
+
+				h1 {
+					// width: auto;
+					// font-size: px2rem(30);
+					// line-height: px2rem(40);
+					// margin-bottom: px2rem(30);
+					width: auto;
+					font-size: 26px;
+					line-height: 30px;
+					margin-bottom: 20px;
+					letter-spacing: 0;
+					transform: translateY(-150px);
+					-webkit-transform: translateY(-150px);
+					-moz-transform: translateY(-150px);
+					opacity: 0;
+					display: block;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					color: #ffffff;
+					@extend .call-adds-delay;
+					@media screen and (max-width: 767px) {
+						width: auto;
+						font-size: px2rem(150);
+						line-height: px2rem(150);
+						margin-bottom: px2rem(150);
+					}
+				}
+
+				h2,
+				h3,
+				h4,
+				h5,
+				h6 {
+					// width: 100%;
+					// font-size: px2rem(24);
+					// line-height: px2rem(40);
+					// margin-bottom: px2rem(15);
+					// letter-spacing: 0;
+					// opacity: 0;
+					// font-weight: normal;
+					// font-style: normal;
+					// font-stretch: normal;
+					// color: #ffffff;
+					width: 60%;
+					line-height: 20px;
+					margin-bottom: 5px;
+					letter-spacing: 0;
+					opacity: 0;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					color: #ffffff;
+					font-size: 16px;
+					@extend .call-adds-transY;
+					@extend .call-adds-delay;
+					@media screen and (max-width: 767px) {
+						width: 100%;
+						font-size: px2rem(100);
+						line-height: px2rem(120);
+						margin-bottom: px2rem(60);
+					}
+				}
+			}
+		}
+	}
+}
+//scss...
+
+.call-adds-delay {
+	transition: all 0.5s ease-out 0s;
+	-webkit-transition: all 0.5s ease-out 0s;
+	-moz-transition: all 0.5s ease-out 0s;
+}
+
+.call-adds-hover-transY {
+	transform: translateY(0);
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+}
+
+.call-adds-transY {
+	transform: translateY(180px);
+	-webkit-transform: translateY(180px);
+	-moz-transform: translateY(180px);
+}
+//引用...
+
+.call-intro {
+	position: relative;
+	width: px2rem(1920);
+	height: px2rem(400);
+	min-height: 252px;
+	background-color: #000;
+	margin-bottom: 10%;
+}
+
+.call-intro .call-intro-slide {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+
+.call-intro .call-intro-lists {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.call-intro .call-intro-lists li {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: all 1s ease 0s;
+	-webkit-transition: all 1s ease 0s;
+	-moz-transition: all 1s ease 0s;
+}
+
+.call-intro .call-intro-lists li:nth-of-type(1) {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.call-intro .call-intro-lists li:nth-of-type(2) {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.call-intro .call-intro-lists li:nth-of-type(3) {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.call-intro .call-intro-lists li .call-contsd {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: table;
+	text-align: left;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.call-intro .call-intro-lists li .call-contsd .call-neis {
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 0;
+	text-align: center;
+}
+
+.call-intro .call-intro-lists li .call-contsd .call-neis .call-textsz {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.call-intro .call-intro-lists li .call-contsd .call-neis p {
+	/*padding-left: 200px;*/
+	position: relative;
+	text-align: left;
+	font-size: px2rem(36);
+	color: #fff;
+	margin-bottom: 20px;
+	opacity: 0;
+	transform: translateY(50px);
+	-webkit-transform: translateY(50px);
+	-moz-transform: translateY(50px);
+	color: #fff;
+	@media screen and (max-width: 767px) {
+		font-size: px2rem(70);
+	}
+}
+
+.call-intro .call-intro-lists li .call-contsd .call-neis p:nth-child(1)::after {
+	content: '" ——';
+	width: auto;
+	height: 3px;
+	display: block;
+	position: absolute;
+	left: -1.5rem;
+	top: 0;
+}
+
+// .call-intro .call-intro-lists li .call-contsd .call-neis p font {
+// 	display: inline-block;
+// }
+
+.call-intro .call-intro-lists li .call-contsd .call-neis p:nth-of-type(1) {
+	transition: all 0.5s ease 1.4s;
+	-webkit-transition: all 0.5s ease 1.4s;
+	-moz-transition: all 0.5s ease 1.4s;
+}
+
+.call-intro .call-intro-lists li .call-contsd .call-neis p:nth-of-type(2) {
+	transition: all 0.5s ease 1.6s;
+	-webkit-transition: all 0.5s ease 1.6s;
+	-moz-transition: all 0.5s ease 1.6s;
+}
+
+.call-intro .call-intro-lists li .call-contsd .call-neis p:nth-of-type(3) {
+	transition: all 0.5s ease 1.8s;
+	-webkit-transition: all 0.5s ease 1.8s;
+	-moz-transition: all 0.5s ease 1.8s;
+}
+
+.call-intro .call-intro-lists li.cur {
+	opacity: 1;
+	z-index: 1;
+}
+
+.call-intro .call-intro-lists li.cur .call-contsd .call-neis h3 {
+	opacity: 1;
+	transform: translateX(0px);
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+}
+
+.call-intro .call-intro-lists li.cur .call-contsd .call-neis h4 {
+	opacity: 1;
+	transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-webkit-transform: translateX(0px);
+}
+
+.call-intro .call-intro-lists li.cur .call-contsd .call-neis p {
+	opacity: 1;
+	transform: translateY(0px);
+}
+//intro main...
+
+.call-intro .words-slide {
+	width: px2rem(60);
+	height: px2rem(60);
+	left: 10%;
+	bottom: 2%;
+	z-index: 2;
+	position: absolute;
+	@media screen and (max-width: 767px) {
+		width: px2rem(130);
+		height: px2rem(130);
+	}
+}
+
+.call-intro .words-slide ul {
+	width: px2rem(60);
+	height: px2rem(60);
+	@media screen and (max-width: 767px) {
+		width: px2rem(130);
+		height: px2rem(130);
+	}
+}
+
+.call-intro .words-slide ul li {
+	width: 5px;
+	height: 30px;
+	border-radius: 3px 3px 3px 3px;
+	margin: auto px2rem(5) 0;
+	cursor: pointer;
+	float: left;
+	position: relative;
+	@media screen and (max-width: 767px) {
+		width: px2rem(20);
+		height: px2rem(80);
+		border-radius: 3px 3px 3px 3px;
+		margin: auto px2rem(10) 0;
+	}
+}
+
+.call-intro .words-slide ul li span {
+	width: 5px;
+	height: 30px;
+	background-color: rgba(189, 150, 0, 1);
+	border-radius: 3px 3px 3px 3px;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	@media screen and (max-width: 767px) {
+		width: px2rem(20);
+		height: px2rem(80);
+	}
+}
+
+.call-intro .words-slide ul li {
+	transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+}
+
+.call-intro .words-slide ul li.cues span,
+.call-intro .words-slide ul li:hover span {
+	width: 5px;
+	height: 40px;
+	display: block;
+	background-color: rgba(189, 150, 0, 1);
+	border-radius: 3px 3px 3px 3px;
+	@media screen and (max-width: 767px) {
+		width: px2rem(20);
+		height: px2rem(130);
+	}
+}
+//intro tag...

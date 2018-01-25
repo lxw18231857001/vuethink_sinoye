@@ -1,0 +1,441 @@
+.scrollBar {
+	position: relative;
+	left: 0;
+	top: 0;
+	width: px2rem(1920);
+	height: px2rem(950);
+	@media screen and (max-width: 1023px) {
+		width: px2rem(1920);
+		height: px2rem(1300);
+	}
+
+	.banner {
+		width: px2rem(1920);
+		height: px2rem(950);
+		background: #000;
+		@media screen and (max-width: 1023px) {
+			width: px2rem(1920);
+			height: px2rem(1300);
+		}
+	}
+	// 摆动栏
+	.index-waper-box {
+		width: 100%;
+		height: 100px;
+		background-color: #FCC800;
+		position: absolute;
+		bottom: 0;
+		// overflow: hidden;
+		z-index: 9;
+		perspective: 800px;
+		-webkit-perspective: 800px;
+		-moz-perspective: 800px;
+		transform-style: preserve-3d;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		@media screen and (max-width: 1024px) {
+			width: 100%;
+			height: 75px;
+		}
+		@media screen and (max-width: 767px) {
+			width: 100%;
+			height: 50px;
+		}
+
+		.index-back-box {
+			width: 60%;
+			height: 100px;
+			margin: 0 20%;
+			position: absolute;
+			bottom: 0;
+			background-color: #FCC800;
+			@media screen and (max-width: 1024px) {
+				width: 80%;
+				height: 75px;
+				margin: 0 10%;
+			}
+			@media screen and (max-width: 767px) {
+				width: 92%;
+				height: 50px;
+				margin: 0 4%;
+			}
+
+			ul {
+				@extend .flexSBC;
+
+				li {
+					width: 72px;
+					height: 80px;
+					margin-top: 10px;
+					color: #000;
+					cursor: pointer;
+					position: relative;
+
+					i {
+						width: 60px;
+						height: 60px;
+						display: block;
+						@extend .backgroundCC;
+						@media screen and (max-width: 767px) {
+							display: none;
+						}
+					}
+
+					em {
+						width: 72px;
+						height: 20px;
+						line-height: 20px;
+						text-align: center;
+						display: block;
+						font-size: 18px;
+						@media screen and (max-width: 1024px) {
+							display: none;
+						}
+						@media screen and (max-width: 767px) {
+							display: block;
+							text-align: left;
+						}
+					}
+
+					span {
+						width: 128px;
+						line-height: 20px;
+						top: 90px;
+						left: -32px;
+						opacity: 0;
+						position: absolute;
+						color: #C7C7C7;
+						background: #333;
+						text-align: center;
+						font-size: 14px;
+						@extend .delay500;
+					}
+
+					a {
+						width: 72px;
+						height: 80px;
+						@extend .flexCC;
+						@extend .flexV;
+						@media screen and (max-width: 1024px) {
+							height: 60px;
+						}
+						@media screen and (max-width: 767px) {
+							height: 30px;
+						}
+						&:hover{
+							span{
+								opacity: .8;
+								@extend .delay500;
+							}
+						}
+					}
+
+					&:nth-child(1) {
+						i {
+							background-image: url('../assets/imgs/pp.jpg');
+						}
+
+					}
+
+					&:nth-child(2) {
+						i {
+							background-image: url('../assets/imgs/hlw.jpg');
+						}
+					}
+
+					&:nth-child(3) {
+						i {
+							background-image: url('../assets/imgs/cb.jpg');
+						}
+					}
+
+					&:nth-child(4) {
+						i {
+							background-image: url('../assets/imgs/tfyt.jpg');
+						}
+					}
+				}
+			}
+		}
+		// 摆动栏...
+	}
+}
+
+.ysr-brand {
+	width: px2rem(1920);
+	height: px2rem(450);
+	// position: relative;
+	background-color: #000;
+	@media screen and (max-width:1024px) {
+		width: px2rem(1920);
+		height: px2rem(500);
+	}
+	@media screen and (max-width: 767px) {
+		width: 100%;
+		height: 325px;
+		// margin-bottom: -16px;
+	}
+
+	.ysr-waperTit {
+		width: px2rem(1200);
+		margin: auto auto px2rem(65);
+		text-align: center;
+		@media screen and (max-width:1024px) {
+			width: px2rem(1600);
+			margin: auto auto px2rem(65);
+		}
+		@media screen and (max-width: 767px) {
+			width: 94%;
+			text-align: center;
+			margin: auto auto px2rem(100);
+		}
+
+		h2 {
+			font-size: px2rem(36);
+			line-height: 150%;
+			transition: all 1s ease-out 0.1s;
+			-webkit-transition: all 1s ease-out 0.1s;
+			-moz-transition: all 1s ease-out 0.1s;
+			color: #FCC800;
+			@media screen and (max-width: 767px) {
+				font-size: 24px;
+				line-height: 150%;
+			}
+		}
+
+		p {
+			font-size: 14px;
+			margin-top: px2rem(5);
+			line-height: 1.7;
+			transition: all 1s ease-out 0.2s;
+			-webkit-transition: all 1s ease-out 0.2s;
+			-moz-transition: all 1s ease-out 0.2s;
+			color: #FCC800;
+			@media screen and (max-width: 767px) {
+				font-size: 16px;
+				line-height: 150%;
+				margin-top: px2rem(30);
+			}
+		}
+	}
+
+	.indexList {
+		width: px2rem(1200);
+		margin: auto auto px2rem(100);
+		display: table;
+		position: relative;
+		transition: all 0.8s ease-out 0s;
+		-webkit-transition: all 0.8s ease-out 0s;
+		-moz-transition: all 0.8s ease-out 0s;
+		@media screen and (max-width:1024px) {
+			width: px2rem(1600);
+			margin: auto auto px2rem(100);
+		}
+		@media screen and (max-width: 767px) {
+			width: 320px;
+			margin: 0 auto;
+		}
+
+		ul {
+			font-size: 0;
+
+			li {
+				display: inline-block;
+				width: 25%;
+				text-align: center;
+				position: relative;
+				vertical-align: bottom;
+				@media screen and (max-width: 767px) {
+					width: 50%;
+					margin-top: 20px;
+				}
+
+				&+li {
+					border-left: 1px solid #fcc800;
+					@extend .box-sizingBB;
+					@media screen and (max-width: 767px) {
+						&:nth-child(3) {
+							border: none;
+						}
+					}
+				}
+
+				&:nth-child(1) {
+					em {
+						position: relative;
+
+						&::after {
+							content: "年";
+							display: block;
+							width: 5px;
+							height: 5px;
+							position: absolute;
+							right: -10px;
+							top: -20px;
+							color: #fcc800;
+							font-size: px2rem(18);
+							@media screen and (max-width: 767px) {
+								font-size: px2rem(80);
+							}
+						}
+					}
+				}
+
+				&:nth-child(2),
+				&:nth-child(3),
+				&:nth-child(4) {
+					em {
+						position: relative;
+
+						&::after {
+							content: "+";
+							display: block;
+							width: 5px;
+							height: 5px;
+							position: absolute;
+							right: -10px;
+							top: -20px;
+							color: #fcc800;
+							font-size: px2rem(18);
+							@media screen and (max-width: 767px) {
+								font-size: px2rem(80);
+							}
+						}
+					}
+				}
+
+				span {
+					display: block;
+					font-size: px2rem(18);
+					color: #fcc800;
+					letter-spacing: px2rem(4);
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: px2rem(36);
+					letter-spacing: 0;
+					text-align: cente;
+					@media screen and (max-width: 767px) {
+						font-size: px2rem(80);
+						line-height: px2rem(80);
+					}
+				}
+				// .nub {
+				//   font-size: 48px;
+				//   color: #fff;
+				//   line-height: 48px;
+				//   height: 48px;
+				//   display: inline-block;
+				//
+				//   .NumContent {
+				//     height: 48px;
+				//     display: 48px;
+				//     overflow: hidden;
+				//     position: relative;
+				//     line-height: 48px;
+				//     font-size: 48px;
+				//
+				//     p {
+				//       height: 48px;
+				//       line-height: 48px;
+				//       font-size: 48px;
+				//       display: inline-block;
+				//
+				//       b {
+				//         height: 48px;
+				//         line-height: 48px;
+				//         font-size: 48px;
+				//         color: #fcc800;
+				//         display: block;
+				//         font-weight: normal;
+				//       }
+				//     }
+				//   }
+				// }
+			}
+		}
+	}
+}
+// mainscss...
+
+.active {
+	opacity: 1;
+	transform: translateY(0px);
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+}
+
+.curs {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	transition: all 1s ease-out 0s;
+	-webkit-transition: all 1s ease-out 0s;
+	-moz-transition: all 1s ease-out 0s;
+	@extend .backgroundCC;
+}
+
+.visb {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 1;
+	transition: all 1s ease-out 0s;
+	-webkit-transition: all 1s ease-out 0s;
+	-moz-transition: all 1s ease-out 0s;
+	@extend .backgroundCC;
+}
+
+.wapermovein {
+	transform: rotateX(90deg);
+	transition: all 0.65s cubic-bezier(0.55, 0.65, 0.55, 1) 0s;
+	-webkit-transition: all 0.65s cubic-bezier(0.55, 0.65, 0.55, 1) 0s;
+	-moz-transition: all 0.65s cubic-bezier(0.55, 0.65, 0.55, 1) 0s;
+	transform-origin: bottom;
+	-webkit-transform-origin: bottom;
+	-moz-transform-origin: bottom;
+	perspective: 800;
+	-webkit-perspective: 800;
+}
+
+.wapermoveout {
+	transform: rotateX(0deg);
+	transition: all 0.65s cubic-bezier(0.55, 0.65, 0.55, 1) 0s;
+	-webkit-transition: all 0.65s cubic-bezier(0.55, 0.65, 0.55, 1) 0s;
+	-moz-transition: all 0.65s cubic-bezier(0.55, 0.65, 0.55, 1) 0s;
+	transform-origin: bottom;
+	-webkit-transform-origin: bottom;
+	-moz-transform-origin: bottom;
+	perspective: 800;
+	-webkit-perspective: 800;
+}
+
+.index-back-box.active {
+	transform: rotateX(100deg) translate3d(0, 0, 0);
+	-webkit-transform: rotateX(100deg) translate3d(0, 0, 0);
+	-moz-transform: rotateX(100deg) translate3d(0, 0, 0);
+}
+
+.ysr-brand .indexList,
+.ysr-brand .ysr-waperTit h2,
+.ysr-brand .ysr-waperTit p {
+	opacity: 0;
+	transform: translateY(px2rem(200));
+	-webkit-transform: translateY(px2rem(200));
+	-moz-transform: translateY(px2rem(200));
+}
+
+.ysr-brand .indexList.active,
+.ysr-brand .ysr-waperTit.active h2,
+.ysr-brand .ysr-waperTit.active p {
+	opacity: 1;
+	transform: translateY(px2rem(100));
+	-webkit-transform: translateY(px2rem(100));
+	-moz-transform: translateY(px2rem(100));
+}
+// importscss...
